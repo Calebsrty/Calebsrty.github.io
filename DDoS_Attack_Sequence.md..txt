@@ -9,6 +9,8 @@ F[Malicious traffic]
 G(Attacker Computer) --> H
 H[Malicious traffic] 
 H ==> J
-K(Attacjer Computer) --> L[Malicious traffic]
+K(Attacker Computer) --> L[Malicious traffic]
 L ==> J
 ```
+
+The Real user is any normal and innocent person using the internet. They connect to an open port and begin sending traffic through that gets scanned by the firewall and then is sent to a server. The Attacker will use multiple computers that will send Malicious traffic through your open ports confusing the firewall. The firewall will become overwhelmed and have difficulty noticing the IP of the packets sent to stop them from heading to the server. Because the firewall is confused on what packets are safe and what are malicious lots of malicious packets end up heading to the server.
