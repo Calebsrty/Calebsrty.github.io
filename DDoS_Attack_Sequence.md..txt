@@ -1,7 +1,14 @@
 ```mermaid
-sequenceDiagram
-participant Attacker
-participant BotNet
-participant WebServer
-participant Firewall
+graph LR
+    A(Real User) --> E[Safe Traffic] --> J[open HTTP Port]==>I[Confused Firewall]
+C(Attacker Computer) --> F
+    I ==> D{Server}
+F[Malicious traffic] 
+    F ==> J
+    J[open HTTP Port]
+G(Attacker Computer) --> H
+H[Malicious traffic] 
+H ==> J
+K(Attacjer Computer) --> L[Malicious traffic]
+L ==> J
 ```
